@@ -1,0 +1,56 @@
+{
+  "name": "taskflow-desktop",
+  "version": "1.0.1",
+  "private": true,
+  "description": "TaskFlow desktop app with a Windows notification-area icon and reminders.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.taskflow.desktop",
+    "productName": "TaskFlow",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "main.cjs",
+      "preload.cjs",
+      "manifest.json",
+      "service-worker.js",
+      "notepad.svg",
+      "notepad-180.png",
+      "notepad-192.png",
+      "notepad-512.png"
+    ],
+    "win": {
+      "icon": "notepad.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "allowScripts": {
+    "electron@40.10.6": true,
+    "electron-winstaller@5.4.0": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "My Tasks",
+  "short_name": "Tasks",
+  "description": "A simple task list to help organize your day.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "black",
+  "theme_color": "black",
+  "icons": [
+    {
+      "src": "notepad.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "notepad-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "notepad-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
