@@ -2,7 +2,7 @@
 
 A clean, lightweight to-do list web application that helps users organize daily tasks by priority and sends automatic reminders 1 hour before a task is due.
 
-🔗 [Live Demo]((https://6afdbd3099b44d6f3046ba30--to-do-listappp.netlify.app/))
+🔗 [Live Demo](https://6afdbd3099b44d6f3046ba30--to-do-listappp.netlify.app/)
 
 
 
