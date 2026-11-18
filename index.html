@@ -13,6 +13,17 @@
 </head>
 <body>
 
+    <section class="reminder-settings" aria-label="Reminder settings">
+            <div>
+                <p id="reminder-status">Reminders are off. Enable notifications to get a reminder one hour before a task is due.</p>
+                <p id="reminder-note" class="reminder-note">Browser reminders work while this app is open.</p>
+            </div>
+            <div class="reminder-actions">
+                <button id="test-notification-btn" type="button" hidden>Send test</button>
+                <button id="reminder-toggle" type="button">Enable reminders</button>
+            </div>
+        </section>
+
     <main class="app-shell">
         <header class="app-header">
             <div>
@@ -56,16 +67,6 @@
         </section>
         <p id="save-status" class="save-status" role="status" aria-live="polite">Changes save automatically on this device.</p>
 
-        <section class="reminder-settings" aria-label="Reminder settings">
-            <div>
-                <p id="reminder-status">Reminders are off. Enable notifications to get a reminder one hour before a task is due.</p>
-                <p id="reminder-note" class="reminder-note">Browser reminders work while this app is open.</p>
-            </div>
-            <div class="reminder-actions">
-                <button id="test-notification-btn" type="button" hidden>Send test</button>
-                <button id="reminder-toggle" type="button">Enable reminders</button>
-            </div>
-        </section>
 
         <nav class="filter-tabs" aria-label="Filter tasks">
             <button class="filter-btn active" type="button" data-filter="all">All</button>
